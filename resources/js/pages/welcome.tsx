@@ -26,7 +26,7 @@ export default function Welcome({
                                 href={dashboard()}
                                 className="inline-block rounded-sm border border-[#19140035] px-5 py-1.5 text-sm leading-normal text-[#1b1b18] hover:border-[#1915014a] dark:border-[#3E3E3A] dark:text-[#EDEDEC] dark:hover:border-[#62605b]"
                             >
-                                Dashboard
+                            Dashboard
                             </Link>
                         ) : (
                             <>
@@ -69,12 +69,12 @@ export default function Welcome({
                                     <span>
                                         Read the
                                         <a
-                                            href="https://laravel.com/docs"
+                                            href="/about"
                                             target="_blank"
                                             className="ml-1 inline-flex items-center space-x-1 font-medium text-[#f53003] underline underline-offset-4 dark:text-[#FF4433]"
                                         >
-                                            <span>Documentation</span>
-                                            <svg
+                                            <span>About Us</span>
+                                            <svg   
                                                 width={10}
                                                 height={11}
                                                 viewBox="0 0 10 11"
