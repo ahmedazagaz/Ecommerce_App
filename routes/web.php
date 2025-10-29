@@ -18,6 +18,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('dashboard', function () {
         return Inertia::render('dashboard');
     })->name('dashboard');
+    Route::get('brands', [\App\Http\Controllers\BrandController::class, 'index'])->name('brands.index');
 });
 
 require __DIR__.'/settings.php';

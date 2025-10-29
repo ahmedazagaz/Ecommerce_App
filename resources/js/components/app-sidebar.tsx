@@ -10,7 +10,7 @@ import {
     SidebarMenuButton,
     SidebarMenuItem,
 } from '@/components/ui/sidebar';
-import { dashboard } from '@/routes';
+import { dashboard, users, categories, brands, products, orders } from '@/routes';
 import { type NavItem } from '@/types';
 import { Link } from '@inertiajs/react';
 import { BookOpen, Folder, Users,Tag ,LayoutGrid, Monitor, Layout, ShoppingCart } from 'lucide-react';
@@ -24,32 +24,28 @@ const mainNavItems: NavItem[] = [
     },
     {
         title: 'Users',
-        href: '/users',
+        href: users(),
         icon: Users,
     },
-    
     {
         title: 'Categories',
-        href:  '/categories',
-        icon:   Tag,
+        href: categories(),
+        icon: Tag,
     },
-
-     {
+    {
         title: 'Brands',
-        href:  '/brands',
-        icon:   Monitor,
+        href: brands(),
+        icon: Monitor,
     },
-
     {
         title: 'Products',
-        href:  '/products',
-        icon:   LayoutGrid,
+        href: products(),
+        icon: LayoutGrid,
     },
-    
-     {
+    {
         title: 'Orders',
-        href:  '/orders',
-        icon:   ShoppingCart,
+        href: orders(),
+        icon: ShoppingCart,
     },
 ];
 
