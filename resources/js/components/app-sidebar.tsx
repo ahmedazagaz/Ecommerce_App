@@ -13,14 +13,14 @@ import {
 import { dashboard, users, categories, brands, products, orders } from '@/routes';
 import { type NavItem } from '@/types';
 import { Link } from '@inertiajs/react';
-import { BookOpen, Folder, Users,Tag ,LayoutGrid, Monitor, Layout, ShoppingCart } from 'lucide-react';
+import { BookOpen, Folder, Users,Tag ,LayoutGrid, Monitor, House, ShoppingCart } from 'lucide-react';
 import AppLogo from './app-logo';
 
 const mainNavItems: NavItem[] = [
     {
         title: 'Dashboard',
         href: dashboard(),
-        icon: LayoutGrid,
+        icon: House,
     },
     {
         title: 'Users',

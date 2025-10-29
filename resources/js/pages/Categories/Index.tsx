@@ -9,15 +9,13 @@ const breadcrumbs: BreadcrumbItem[] = [
         title: 'Dashboard',
         href: dashboard().url,
     },
+
 ];
 
-export default function Brands() {
+export default function Categories() {
     return (
         <AppLayout breadcrumbs={breadcrumbs}>
-            <Head title="Brands" />
-            <div className="flex justify-end mb-4 px-4 pt-4">
-                <Button onClick={() => console.log('New Brand Clicked')}>New brand</Button>
-            </div>
+            <Head title="Categories" />
+            <h2>categories page</h2>
         </AppLayout>
-    );
-}
+        );}
