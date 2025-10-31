@@ -4,7 +4,7 @@ import { dashboard } from '@/routes';
 import { type BreadcrumbItem } from '@/types';
 import { Head } from '@inertiajs/react';
 import { router } from '@inertiajs/react';
-
+import React from 'react';
 const breadcrumbs: BreadcrumbItem[] = [
     {
         title: 'Users',
@@ -18,6 +18,7 @@ const breadcrumbs: BreadcrumbItem[] = [
 ];
 
 export default function Users() {
+    const [checked, setChecked] = React.useState(false);
     return (
       <AppLayout breadcrumbs={breadcrumbs}>
                           <Head title="Users" />
@@ -28,11 +29,25 @@ export default function Users() {
                              <Button onClick={() => router.get('/users/Create')}>New User</Button>
 
                           </div>
+                           <div className="flex items-center justify-end mb-4">
+                        <input
+                            type="text"
+                            placeholder="Search"
+                            className="border rounded px-3 py-2 w-64"
+                        />
+                    </div>
               {/* Table */}
             <div className="overflow-x-auto bg-white shadow rounded-lg mx-6">
                 <table className="min-w-full text-sm text-left">
                     <thead className="border-b bg-gray-50">
-                     <tr>
+                     <tr className="border-b">
+                         <th className="py-2 px-2 font-medium text-gray-700">
+                                        <input
+                                            type="checkbox"
+                                            checked={checked}
+                                            onChange={() => setChecked(!checked)}
+                                        />
+                                    </th>
                     <th className="px-6 py-3 font-semibold">Name</th>
                      <th className="px-6 py-3 font-semibold">Email</th>
                      <th className="px-6 py-3 font-semibold">Email Verified At</th>

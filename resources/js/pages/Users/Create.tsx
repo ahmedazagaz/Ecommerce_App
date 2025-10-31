@@ -99,7 +99,15 @@ export default function CreateUser() {
 
         <div className="flex items-center gap-4">
           <Button type="submit">Create</Button>
+           <Button
+    type="button"
+    variant="outline"
+    onClick={() => router.get('/users')}
+  >
+    Cancel
+  </Button>
         </div>
+        
       </form>
     </AppLayout>
   );
