@@ -10,11 +10,13 @@ import {
     SidebarMenuButton,
     SidebarMenuItem,
 } from '@/components/ui/sidebar';
-import { dashboard, users, categories, brands, products, orders } from '@/routes';
+import { dashboard, users,categories,brands,products,orders} from '@/routes';
 import { type NavItem } from '@/types';
 import { Link } from '@inertiajs/react';
 import { BookOpen, Folder, Users,Tag ,LayoutGrid, Monitor, House, ShoppingCart } from 'lucide-react';
 import AppLogo from './app-logo';
+
+
 
 const mainNavItems: NavItem[] = [
     {
