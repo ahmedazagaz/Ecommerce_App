@@ -11,4 +11,9 @@ class BrandController extends Controller
     {
         return Inertia::render('Brands/Index');
     }
+
+    public function create()
+    {
+        return Inertia::render('Brands/Create');
+    }
 }
