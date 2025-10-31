@@ -19,9 +19,15 @@ Route::middleware(['auth', 'verified'])->group(function () {
         return Inertia::render('dashboard');
     })->name('dashboard');
     Route::get('brands', [\App\Http\Controllers\BrandController::class, 'index'])->name('brands.index');
+
     Route::get('users', [\App\Http\Controllers\UserController::class, 'index'])->name('users.index');
+    Route::get('users/Create', [\App\Http\Controllers\UserController::class, 'Create'])->name('users.Create');
+
     Route::get('categories', [\App\Http\Controllers\CategoryController::class, 'index'])->name('categories.index');
+    Route::get('categories/Create', [\App\Http\Controllers\CategoryController::class, 'Create'])->name('categories.Create');
+
     Route::get('products', [\App\Http\Controllers\ProductController::class, 'index'])->name('products.index');
+
     Route::get('orders', [\App\Http\Controllers\OrderController::class, 'index'])->name('orders.index');
 });
 
