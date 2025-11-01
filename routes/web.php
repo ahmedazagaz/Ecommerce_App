@@ -29,7 +29,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
 
     Route::get('products', [\App\Http\Controllers\ProductController::class, 'index'])->name('products.index');
 
-    // Route::get('orders', [\App\Http\Controllers\OrderController::class, 'index'])->name('orders.index');
+    Route::get('orders', [\App\Http\Controllers\OrderController::class, 'index'])->name('orders.index');
 });
 
 require __DIR__.'/settings.php';

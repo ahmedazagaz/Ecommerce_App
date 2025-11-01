@@ -13,7 +13,7 @@ import {
 import { dashboard, users,categories,brands,products,orders} from '@/routes';
 import { type NavItem } from '@/types';
 import { Link } from '@inertiajs/react';
-import { BookOpen, Folder, Users,Tag ,LayoutGrid, Monitor, House, ShoppingCart } from 'lucide-react';
+import { BookOpen,Bell, Users,Tag ,LayoutGrid, Monitor, House, ShoppingCart } from 'lucide-react';
 import AppLogo from './app-logo';
 
 
@@ -53,15 +53,11 @@ const mainNavItems: NavItem[] = [
 
 const footerNavItems: NavItem[] = [
     {
-        title: 'Repository',
+        title: 'Notifications',
         href: 'https://github.com/laravel/react-starter-kit',
-        icon: Folder,
+        icon: Bell,
     },
-    {
-        title: 'Documentation',
-        href: 'https://laravel.com/docs/starter-kits#react',
-        icon: BookOpen,
-    },
+  
 ];
 
 export function AppSidebar() {
